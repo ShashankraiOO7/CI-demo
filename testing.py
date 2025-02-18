@@ -16,6 +16,9 @@ class TestMathFunctions(unittest.TestCase):
     def test_mult(self):
         self.assertEqual(mult(4, 5), 20)
         self.assertEqual(mult(-1, -1), 1)
+        
+    def test_mod(self):
+        self.assertEqual(mod(11, 2), 1)
 
 if __name__ == '__main__':
     unittest.main()
