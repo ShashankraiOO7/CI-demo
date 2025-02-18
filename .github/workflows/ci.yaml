@@ -32,7 +32,7 @@ jobs:
         run: |
           flake8 app.py
   testing:
-    needed: linting
+    needs: linting
     runs-on: ubntu-latest
     steps:
       - name: code checkout
