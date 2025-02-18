@@ -11,7 +11,7 @@ def mult(a, b):
 
 
 def mod(a, b):
-    return a%b
+    return a % b
 
 
 print(add(19, 2))
