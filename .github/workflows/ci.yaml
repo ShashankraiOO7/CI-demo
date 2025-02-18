@@ -31,3 +31,23 @@ jobs:
       - name: run flake8
         run: |
           flake8 app.py
+  testing:
+    needed: linting
+    runs-on: ubntu-latest
+    steps:
+      - name: code checkout
+        uses: actions/checkout@v3
+
+      - name: setup python
+        uses: actions/python@v2
+
+      - name: run unit test
+        runs: |
+          python -m unittest-discover
+
+
+
+
+
+
+
