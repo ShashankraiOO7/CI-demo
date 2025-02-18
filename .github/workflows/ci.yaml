@@ -42,8 +42,8 @@ jobs:
         uses: actions/python@v2
 
       - name: run unit test
-        runs: |
-          python -m unittest-discover
+        run: |
+          python -m unittest discover
 
 
 
